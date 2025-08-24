@@ -6,7 +6,192 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
+    background-color: #F6F0EB;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+main {
+    padding: 0 16px;
+}
+
+.logo {
+    width: 40px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 40px;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.navbar-right a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #492118;
+}
+
+.hero-section {
+    max-width: 1200px;
+    margin: 16px auto;
+}
+
+.hero-section img {
+    width: 100%;
+}
+
+.hero-section p {
+    color: #492118;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.section {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #492118;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.section img {
+    width: 100%;
+}
+
+.section-1 {
+    margin-bottom: 48px;
+}
+
+.section-2 {
+    margin-bottom: 48px;
+}
+
+.section-3 {
+    margin-bottom: 48px;
+}
+
+.section-4 {
+    margin-bottom: 48px;
+}
+
+.go-to-top {
+    display: flex;
+    justify-content: end;
+    padding: 10px 0;
+    font-size: 16px;
+    text-decoration-line: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 32px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer span {
+    color: red;
+    font-weight: 600;
+}
+
+.navbar-right span {
+    display: none;
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+.desktop-navbar {
+    display: flex;
+}
+
+@media (max-width: 812px) {
+    .section {
+        width: 90%;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right a {
+        font-size: 14px;
+    }
+
+    .mobile-navbar {
+        display: none;
+    }
+
+    .desktop-navbar {
+        display: flex;
+    }
+}
+
+@media (max-width: 666px) {
+    nav {
+        background-color: #f6f0ebb7;
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(8px);
+    }
+
+    .navbar-right {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        flex-direction: column;
+        gap: 16px;
+        top: 20px;
+        right: 20px;
+        padding: 24px;
+    }
+
+    .navbar-right span {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        cursor: pointer;
+        display: block;
+        font-size: 20px;
+    }
+
+    .mobile-navbar i {
+        font-size: 28px;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+
+    .desktop-navbar {
+        display: none;
+    }
 }

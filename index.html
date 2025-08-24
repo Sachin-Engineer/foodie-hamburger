@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodie Hamburger</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <div id="wrapper">
+        <nav>
+            <!-- Navbar Left -->
+            <div class="navbar-left">
+                <img class="logo" src="./images/foodie hamburger logo.svg" alt="foodie hamburger logo">
+            </div>
+
+            <!-- Navbar Right -->
+            <!-- desktop view -->
+            <div class="navbar-right desktop-navbar">
+                <span>&times;</span>
+                <a href="#top-picks">Top Picks</a>
+                <a href="#whopper">Whopper</a>
+                <a href="#stunner-menu">Stunner Menu</a>
+                <a href="#new-foodie-collection">New Foodie Collection</a>
+                <a href="#deal-of-the-day">Deal of the Day</a>
+            </div>
+
+            <!-- Mobile view -->
+            <div class="mobile-navbar">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero-section">
+                <img src="./images/hero-section.png" alt="">
+                <p>Well, You can't resist anymore!</p>
+            </section>
+
+            <section id="top-picks" class="section section-1">
+                <h2>Top Picks</h2>
+                <img src="./images/burger-1.png" alt="burger-1-image">
+            </section>
+
+            <section id="whopper" class="section section-2">
+                <h2>Whopper</h2>
+                <img src="./images/burger-2.png" alt="burger-2-image">
+            </section>
+
+            <section id="stunner-menu" class="section section-3">
+                <h2>Stunner Menu</h2>
+                <img src="./images/burger-3.png" alt="burger-3-image">
+            </section>
+
+            <section id="new-foodie-collection" class="section section-4">
+                <h2>New Foodie Collection</h2>
+                <img src="./images/burger-4.png" alt="burger-4-image">
+            </section>
+
+            <section id="deal-of-the-day" class="section section-5">
+                <h2>Deal of the Day</h2>
+                <img src="./images/burger-5.png" alt="burger-5-image">
+                <a class="go-to-top" href="#">Go to Top</a>
+            </section>
+        </main>
+
+        <footer>
+            made with <i class="fas fa-heart"></i> by <span>Sachin Kumar</span>
+        </footer>
+    </div>
 </body>
+
 </html>
