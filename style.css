@@ -15,12 +15,18 @@ body {
     scroll-behavior: smooth;
 }
 
-nav {
+.nav-container {
     background-color: #fff;
+
+    padding: 8px 16px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px;
 }
 
 main {
@@ -161,7 +167,7 @@ footer span {
 }
 
 @media (max-width: 666px) {
-    nav {
+    .nav-container {
         background-color: #f6f0ebb7;
         position: sticky;
         top: 0;
